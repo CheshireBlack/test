@@ -1,4 +1,4 @@
-*{
+* {
     /* Margin 0 para todos los elementos */
     margin: 0;
     /* Los bordes y el padding cuentan en el ancho */
@@ -8,8 +8,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
-/* color de fondo */
+header {
+    /* color de fondo */
     text-align: left;
     padding-top: 5px;
     background-color: lightyellow;
@@ -27,14 +27,13 @@ header{
     /* cuando posicionamos de manera absolute o fixed
     podemos decirle a cuánta distancia estará de los bordes
     de la web top, bottom, left, right */
-    
     /* El ancho del elemento, normalmente usaremos
     porcentajes */
     width: 100%;
     top: 50px;
 }
 
-nav{
+nav {
     background-color: rgb(200, 195, 195);
     padding-top: 7px;
     padding-right: 7px;
@@ -51,7 +50,7 @@ nav{
     z-index: 1;
 }
 
-aside{
+aside {
     padding: 10px;
     background-color: lightsalmon;
     position: fixed;
@@ -66,7 +65,7 @@ aside{
     overflow: auto;
 }
 
-main{
+main {
     background-color: lightskyblue;
     position: absolute;
     left: 0;
@@ -75,20 +74,23 @@ main{
     /* min-height nos permite especificar una altura 
     mínima para los elementos, por si acaso el contenido
     no es lo suficientemente grande; */
-    min-height: calc(100vh - 150px);
+    height: calc(100vh - 150px);
+    overflow: auto;
 }
+
 /* Todos los enlaces hijos directos de aside */
-aside > a{
+
+aside>a {
     display: block;
     margin: 10px;
 }
 
-nav > a{
+nav>a {
     display: inline-block;
     width: 151px;
 }
 
-nav>a,aside>a{
+nav>a, aside>a {
     background-color: yellow;
     border-style: solid;
     border-color: yellow;
@@ -99,49 +101,55 @@ nav>a,aside>a{
     text-decoration: none;
 }
 
-footer{
+footer {
     position: absolute;
     bottom: 0;
     height: 50px;
     padding-top: 2px;
+    z-index: 1;
+    width: 100%;
+    background-color: crimson;
 }
 
-aside > h1{
+aside>h1 {
     text-align: center;
     border-bottom-color: black;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     padding-bottom: 10px;
-
 }
+
 /* Cuando el ratón esté por encima del elemento.
 Pseudo clase :hover */
-aside > a:hover, nav > a:hover{
+
+aside>a:hover, nav>a:hover {
     border-color: black;
 }
+
 /* En el momento de hacer click. Pseudoclase :active */
-aside > a:active, nav > a:active{
+
+aside>a:active, nav>a:active {
     border-color: white;
 }
+
 /* Cuando ya lo haya visitado. Pseudclase :visited */
-aside > a:visited, nav > a:visited{
+
+aside>a:visited, nav>a:visited {
     color: blue;
 }
 
-main{
-/*  Equivalente a lo de abajo */
-/*
+main {
+    /*  Equivalente a lo de abajo */
+    /*
     padding-top: 2vh;
     padding-right: 2%;
     padding-bottom: 1vh;
     padding-left: 2%;
 */
     padding: 2vh 2% 1vh 2%;
-
-
 }
 
-header{
+header {
     /* border-style: solid; */
     /* Esto significa arriba 5px izda y dcha 1px y abajo 2px */
     /* border-width: 5px 1px 2px; */
@@ -151,6 +159,7 @@ header{
 header img {
     height: 40px;
 }
+
 /* 
 #video_oculto {
     display: none;
