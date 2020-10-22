@@ -1,0 +1,90 @@
+/* 
+header{
+    Selector
+        border-style:
+    Propiedad
+            solid;
+    Valor de la propiedad
+}
+a[title="Enlace a Google"]
+    todos los enlaces que tengan un título que contenga "Enlace a Google" serán afectados por este elemento(si no lo defines serán todos los enlaces que contengan el atributo "title")
+*/
+
+/* Todas las versiones */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Versión para móvil */
+
+@media(max-width: 400px) {
+    header {
+        background-color: khaki;
+        height: 50px;
+    }
+    header h1 {
+        color: blueviolet;
+        display: inline-block;
+    }
+    p.advertencia {
+        color: crimson;
+        display: inline-block;   
+    }
+    /* Afectado por class="advertencia" */
+    aside, main, nav{
+        display: inline-block;
+        height: calc( 100vh - 50px);
+        width: 34%;
+        position: absolute;
+    }
+    aside {
+        left: 0;
+        background-color: lightcoral;
+    }
+    aside h1{
+        text-align: center;
+    }
+    aside > a{
+        height: 100%;
+        width: 100%;
+    }
+    aside > a > p{
+        display: none;
+    }
+    aside > a > img{
+        height: 22%;
+        width: 75%;
+        padding-left: 1px
+    }
+    main {
+        background-color: lightseagreen;
+        left: 33%;
+        overflow: auto;
+    }
+    main,nav h1{
+        text-align: center;
+    }
+    
+    nav {
+        background-color:yellow;
+        right: 0;
+    }
+    footer {
+        display: none;
+    }
+}
+
+/* Versión para escritorio */
+
+@media(min-width: 401px) {
+    header {
+        background-color: lightblue;
+        color: coral;
+    }
+    aside {}
+    main {}
+    nav {}
+    footer {}
+}
