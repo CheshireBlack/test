@@ -28,7 +28,7 @@ h1 {
     /* Todos los elementos crecen en el espacio disponivle con la proporción 1.
     eso es lo que hace flex-grow: 1; de la regla de arriba el espacio que queda 
     en todas las filas es un 1%, así */
-    flex-grow: 91;
+    flex-grow: 99;
 }
 
 .celdatitulo {
