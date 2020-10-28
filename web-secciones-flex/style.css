@@ -37,8 +37,6 @@ main {
     background-color: lightgreen;
 }
 
-aside {}
-
 #aside1 {
     order: 3;
     background-color: maroon;
@@ -55,7 +53,7 @@ footer {
 }
 
 /* Versión para tablet */
-@media (min-width: 650px){
+@media (min-width: 450px){
     aside{
         flex-basis: auto;
     }
@@ -63,7 +61,7 @@ footer {
 
 /* Versión de escritorio */
 
-@media (min-width: 850px){
+@media (min-width: 600px){
     #aside1{
         order: 2;
     }
