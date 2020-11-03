@@ -64,6 +64,11 @@ main {
     flex-basis: 70%;
     flex-grow: 1;
     overflow: auto;
+    height: calc( 100vh - 50px - 40px);
+}
+
+main>p{
+    hyphens: auto;
 }
 
 aside>a>img {
