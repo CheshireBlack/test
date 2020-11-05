@@ -3,8 +3,109 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    overflow: visible;
 }
 
+table{
+    padding: 30px;
+}
+
+thead>tr>th {
+    width: 15%;
+    border: solid 2px black;
+}
+thead>tr>th{
+    background-color: crimson;
+}
+
+thead span{
+    display: none;
+}
+tbody span {
+    display: none;
+}
+
+tbody td {
+    text-align: center;
+    height: 25px;
+}
+
+tbody>tr>td{
+    border: solid 2px black;
+}
+tfoot>tr>th {
+    border-style: solid;
+    text-align: right;
+    width: 100%;
+    background-color: crimson;
+}
+
+ul{
+    padding-bottom: 15px;
+}
+.libres {
+    text-align: center;
+    height: 40px;
+}
+
+.AW{
+    background-color: darkcyan;
+}
+.EIE{
+    background-color: darkgreen;
+}
+.SOR{
+    background-color: orangered;
+}
+.SR{
+    background-color: darkred;
+}
+.LEP{
+    background-color: deeppink;
+}
+.SI{
+    background-color: darkmagenta;
+}
+.correr{
+    background-color: indigo;
+}
+.cocinar{
+    background-color: darkkhaki;
+}
+.musica{
+    background-color: darkolivegreen;
+}
+.estudio{
+    background-color: dodgerblue;
+}
+.repaso{
+    background-color: gold;
+}
+.horas{
+    background-color: steelblue;
+}
+#comida{
+    background-color: palegreen;
+}
+#recreo{
+    background-color: salmon;
+}
 /* Escritorio */
 
-@media(min-width: 600px)
+@media(min-width: 700px) {
+    thead span{
+        display: block;
+        text-align: center;
+    }
+    thead abbr{
+        display: none;
+    }
+    tbody span {
+        display: block;
+        text-align: center;
+    }
+    tbody abbr {
+        display: none;
+    }
+    ul{display: none;}
+}
