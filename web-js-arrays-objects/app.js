@@ -51,3 +51,14 @@ let clase={
 }
 
 document.getElementById("parrafo").innerHTML = clase.alumnos.fila2[1];
+
+let matriz = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12],
+]
+
+let tablero = [
+    "A": ["T","C","A","Rn","Ry","A","C","T"]
+    "B": ["p","p","p","p","p","p","p","p","p"]
+]
