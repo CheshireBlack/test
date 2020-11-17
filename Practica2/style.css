@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: teal;
+    height: 5vh;
+}
+nav{
+    display: flex;
+    background-color: thistle;
+    height: 10vh;
+}
+nav>a{
+    display: flex;
+    width: 20%;
+    margin: 1px;
+}
+
+main{
+    background-color: red;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: 100%;
+    flex-direction: column;
+}
+main>section{
+    height: 25vh;
+}
+#S1{
+    background-color: lawngreen;
+}
+#S2{
+    background-color: lightseagreen;
+}
+#S3{
+    background-color: mediumblue;
+}
+aside{
+    background-color: yellow;
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+aside>a{
+    display: flex;
+    width: 25%;
+    margin: 1px;
+    height: 100%;
+}
+footer{
+    display: none;
+}
