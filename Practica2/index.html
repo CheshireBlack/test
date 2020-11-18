@@ -9,39 +9,82 @@
 </head>
 
 <body>
-    <header>Header</header>
+    <header id="header">
+        <img src="./img/logo.png" alt="Logo de la web">
+        <h1>Web responsive</h1>
+    </header>
     <nav>
-        <a href="http://www.google.com">
+        <a href="https://www.erizopedia.com/2017/07/como-domesticar-mi-erizo-de-tierra.html">
             <img src="./img/Igel-small.png">
+            <span>Erizos</span>
         </a>
 
-        <a href="http://twitter.com">
+        <a href="https://es.wikipedia.org/wiki/Adventure_Time">
             <img src="./img/jake-demonio.png">
+            <span>Hora de aventuras</span>
         </a>
-        <a href="http://wikipedia.com">
+        <a
+            href="https://sitioshistoricos.com/origen-y-significado-de-las-gargolas-por-que-se-colocaban-las-gargolas-en-las-catedrales-e-iglesias/">
             <img src="./img/La-criatura-de-la-oscuridad-2.png">
+            <span>Gargolas</span>
         </a>
-        <a href="http://facebook.com">
+        <a href="https://www.dplay.es/series/wild-frank">
             <img src="./img/Schlange.png">
+            <span>wild-frank</span>
         </a>
-        <a href="http://instagram.com">
+        <a href="https://es.wikipedia.org/wiki/Rey_de_Espa%C3%B1a">
             <img src="./img/shipbadge.png">
+            <span>King</span>
         </a>
     </nav>
     <main>
-        <Section id="S1">Seccion 1</Section>
-        <section id="S2">Seccion 2</section>
-        <Section id="S3">Seccion 3</Section>
+        <Section id="S1">
+            <h1 id="audios">Audios</h1>
+            <h3>Buque de guerra</h3>
+            <audio src="./audios/Battleship.ogg" controls></audio>
+            <h3>Chilling music</h3>
+            <audio src="./audios/Child's Nightmare.ogg" controls></audio>
+            <h3>Torero</h3>
+            <audio src="./audios/No Place For Straw Cowboys.ogg" controls autoplay></audio>
+        </Section>
+        <section id="S2">
+            <h3 id="peces">Peces</h3>
+            <video controls autoplay loop src="./videos/Fish - 1080.mp4"></video>
+            <h1>Videos</h1>
+            <h3 id="tigre">Tigre</h3>
+            <video controls src="./videos/Tiger - 44019.mp4"></video>
+        </section>
+        <Section id="S3">
+            <h1>Videos de otras fuentes</h1>
+            <iframe width="894" height="503" src="https://www.youtube.com/embed/qVbBA9Vsfx4" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="894" height="503" src="https://www.youtube.com/embed/H3fXYcZSXDc" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </Section>
     </main>
     <aside>
         <a href="#S1">
             <img src="./img/audio.png">
+            <span>Audios</span>
         </a>
         <a href="#S2">
+            <img src="./img/video.png">
+            <span>Videos</span>
+        </a>
+        <a href="#S3" id="camara">
+            <img src="./img/camara.png">
+            <span>Videos de otras fuentes</span>
+        </a>
+        <a href="#header">
             <img src="./img/Sweet-Home--Arvin61r58.png">
+            <span>Inicio</span>
         </a>
     </aside>
-    <footer>footer</footer>
+    <footer>
+        <p>Creado por <a href="mailto:197582@iessierradeguara.com">Ramiro</a>.</p>
+    </footer>
 
 
     <script src="./app.js"></script>
