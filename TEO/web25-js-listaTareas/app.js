@@ -17,9 +17,8 @@ function anyadirElemento(textoTarea) {
     let listaTareas = document.getElementById("listaTareas");
     //le añado un elemento de lista con el texto
     // del parámetro textoTarea
-    liTarea = document.createElement("li");
-    liTarea.innerHTML = textoTarea;
-    listaTareas.appendChild(liTarea)
+    console.log(listaTareas);
+    listaTareas.innerHTML += "<li>" + textoTarea + "</li>";
 
     //Esto es equivalente
     //listaTareas.innerHTML = listaTareas.innerHTML + "<li>" + textoTarea + "</li>";
