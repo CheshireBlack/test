@@ -1,14 +1,22 @@
+/* General */
+
+:root {
+    --color1: #ffff00;
+    --color2: #800080;
+    --color3: #ff4500;
+    --color4: #0000ff;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
+
+/* Versión de móvil */
+
 header {
-    background-color: teal;
+    display: flex;
+    background-color: #008080;
     height: 50px;
     width: 100%;
     padding-right: 20px;
@@ -23,14 +31,13 @@ header>h1 {
 
 header>img {
     height: 50px;
-    position: absolute;
     right: 0;
 }
 
 nav {
     display: flex;
-    background-color: thistle;
-    height: 100px;
+    background-color: orange;
+    height: 85px;
     width: 100%;
 }
 
@@ -48,66 +55,79 @@ nav>a span {
 nav>a img {
     width: 100%;
 }
-main{
-    height: calc(100vh - 100px );
-    width: 100%;
-    background-color: darkolivegreen;
-}
-main section{
+
+main {
     display: flex;
-    height: 30%;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
     justify-content: center;
 }
-main section h1{
+
+main section h1 {
     position: absolute;
     text-align: center;
 }
-#audios{
+
+#audios {
     position: relative;
-    padding-bottom: 10px;
 }
-main section audio{
+
+main section audio {
     height: 20px;
 }
-main section video{
-    width: 50%;
-    height: 100%;
-    align-self: center;
+
+main section video {
+    flex-basis: 50%;
     padding: 5px;
+    padding-top: 40px;
 }
+
 #S1 {
     background-color: crimson;
     flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
-#S2{
-    background-color: lightseagreen;
-    
+#S2 {
+    background-color: greenyellow;
 }
-#S2>h3{
-    position: absolute;
-    padding-top: 15px;
+
+#S2>video {
+    align-self: flex-start;
+    margin-top: 25px;
 }
-#tigre{
-    padding-left: 200px;
-}
-#peces{
-    padding-right: 200px;
-}
+
 #S3 {
-    background-color: mediumblue;
+    background-color: maroon;
 }
-iframe{
-    height: 80%;
-    padding-top: 30px;
+
+#S3 h3 {
+    width: 30%;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+iframe {
+    height: 50%;
+    padding-top: 25px;
     margin: 5px;
-    width: 45%;
+    width: 30%;
 }
+
 aside {
     display: flex;
-    background-color: yellow;
-    height: 100px;
+    background-color: var(--color1);
+    height: 85px;
     width: 100%;
     bottom: 0;
     position: fixed;
@@ -130,4 +150,175 @@ aside>a span {
 
 footer {
     display: none;
+}
+
+@media(min-width: 435px) {
+    body {
+        background-color: cornflowerblue;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    nav a {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+    }
+    nav>a span {
+        display: block;
+        border-style: solid;
+        border-radius: 20px;
+        color: var(--color4);
+        background-color: var(--color3);
+    }
+    nav>a img {
+        height: 70%;
+    }
+    nav>a span:hover {
+        background-color: var(--color4);
+        color: var(--color3);
+    }
+    header {
+        margin-top: 85px;
+        width: 100%;
+        padding-left: 85px;
+    }
+    header>img {
+        right: 10px;
+    }
+    aside {
+        position: fixed;
+        flex-direction: column;
+        top: 0%;
+        width: 85px;
+        height: 100vh;
+        margin-top: 85px;
+    }
+    aside a {
+        padding-top: 60px;
+    }
+    main {
+        width: 80%;
+        margin-left: 85px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #S1 {
+        width: 40%;
+        height: 40%;
+        margin: 10px;
+    }
+    #S2 {
+        width: 45%;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        height: 60%;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    #S2>h1 {
+        align-self: center;
+    }
+    #S2 video {
+        flex-basis: 38%;
+        width: 100%;
+    }
+    #S3 {
+        width: 85%;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+}
+
+@media(min-width: 550px) {
+    header {
+        width: calc(100% - 125px);
+        margin-left: 125px;
+    }
+    header img{
+        position: absolute;
+        right: 0%;
+    }
+    main {
+        width: calc(100% - 125px); 
+        margin-left: 125px;
+        flex-basis: 100%;
+    }
+    main section {
+        flex-basis: 31%;
+        padding: 10px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        
+    }
+    #S1 {
+        height: calc(100vh - 135px);
+        margin: 0px;
+        flex-shrink: 1;
+        align-content: center;
+    }
+    #S1 audio{
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    #S2 {
+        height: calc(100vh - 135px);
+        margin: 0px;
+    }
+    #S3 {
+        height: calc(100vh - 135px);
+        margin: 0px;
+        flex-direction: column;
+    }
+    #S3 h1{
+        padding-bottom: 520px;
+    }
+    #S3 h3{
+        width: 40%;
+    }
+    iframe{
+        height: 120px;
+        width: 50% ;
+        margin-bottom: 30px
+    }
+    aside {
+        width: 125px;
+        align-content: center;
+    }
+    aside a{
+        flex-direction: column;
+        padding-top: 5px;
+        margin-bottom: 15px;
+        height: 20%;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    aside a span {
+        display: block;
+        border-style: solid;
+        border-radius: 10px;
+        color: var(--color2);
+        background-color: var(--color1);
+        text-decoration: none;
+    }
+    aside a span:hover{
+        background-color: var(--color2);
+        color: var(--color1);
+    }
+    footer {
+        display: block;
+        width: calc(100% - 125px);
+        height: 50px;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        background-color: green;
+    }
 }

@@ -17,11 +17,6 @@ function anyadirElemento(textoTarea) {
     let listaTareas = document.getElementById("listaTareas");
     //le añado un elemento de lista con el texto
     // del parámetro textoTarea
-<<<<<<< HEAD
-    liTarea = document.createElement("li");
-    liTarea.innerHTML = textoTarea;
-    listaTareas.appendChild(liTarea)
-=======
 
     //Creamos un elemento <li>
     liTarea = document.createElement("li");
@@ -31,7 +26,6 @@ function anyadirElemento(textoTarea) {
 
     //Añado el elemento a la listaTareas
     listaTareas.appendChild(liTarea);
->>>>>>> 0877f6b93c1f1b49d8d9bae1677cf82f07eae034
 
     //Esto es equivalente
     //listaTareas.innerHTML = listaTareas.innerHTML + "<li>" + textoTarea + "</li>";
@@ -48,14 +42,6 @@ function borrarTarea() {
         //borrar de la lista de tareas el elemento número
         //n-1, donde n es el valor que me ha pasado el
         // usuario.
-<<<<<<< HEAD
-        numTarea = numTarea - 1; //numTarea--; numTarea-=1;
-
-        //capturo el elemento que quiero borrar.
-        let eTareaBorrar = lTareas.children[numTarea];
-        //borro ese elemento de la lista.
-        lTareas.removeChild(eTareaBorrar);
-=======
         let indice = numTarea - 1; 
 
         //capturo el elemento que quiero borrar.
@@ -64,7 +50,6 @@ function borrarTarea() {
         lTareas.removeChild(eTareaBorrar);
 
         //lTareas.removeChild(lTareas.children[numTarea-1]);
->>>>>>> 0877f6b93c1f1b49d8d9bae1677cf82f07eae034
     }else{
         alert("Número no válido.");
     }
