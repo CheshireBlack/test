@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio ejs</title>
-</head>
+<html lang="es">
+    <%- include('head',{title: 'Inicio' }) %>
+    <%- include('header') %>
 <body>
-    ola ke ase
+    <ul>
+        <li>
+            <%= nombre %>
+        </li>
+    </ul>
 </body>
+
 </html>
